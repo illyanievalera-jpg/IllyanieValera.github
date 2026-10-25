@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Illyanie Valera | Portfolio</title>
+
+  <style>
+    :root {
+      --green: #355b46;
+      --pink: #f2c6d2;
+      --cream: #fffaf1;
+      --coral: #ef806c;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--cream);
+      color: var(--green);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 20px 8%;
+      border-bottom: 1px solid #e5ded2;
+    }
+
+    nav a {
+      color: var(--green);
+      text-decoration: none;
+      margin-left: 16px;
+    }
+
+    .hero {
+      padding: 90px 8%;
+      background: var(--pink);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 8vw, 5.5rem);
+      line-height: 1.05;
+      margin: 12px 0;
+    }
+
+    .hero p { max-width: 560px; }
+
+    .button {
+      display: inline-block;
+      background: var(--green);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 24px;
+      text-decoration: none;
+      margin-top: 12px;
+    }
+
+    section { padding: 55px 8%; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 18px;
+      border: 1px solid #e5ded2;
+    }
+
+    .card:nth-child(even) {
+      background: #e7eee5;
+    }
+
+    footer {
+      background: var(--green);
+      color: white;
+      text-align: center;
+      padding: 28px;
+    }
+
+    footer a { color: var(--pink); }
+
+    a:focus-visible {
+      outline: 3px solid var(--coral);
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <strong>YOUR NAME ✳</strong>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p>MY PERSONAL PORTFOLIO · 2026</p>
+      <h1>Ideas into<br>impact.</h1>
+      <p>
+        I'm a student, creator, and future entrepreneur
+        passionate about engineering, leadership, and
+        turning ideas into meaningful projects.
+      </p>
+      <a class="button" href="#projects">Explore my work ↗</a>
+    </section>
+
+    <section id="about">
+      <h2>A little about me</h2>
+      <p>
+        Welcome to my portfolio! This is where I share
+        my journey, the things I create, the teams I work
+        with, and the goals I'm working toward.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Things I've created</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Robotics & Engineering</h3>
+          <p>Robot designs, CAD models, building, and problem-solving.</p>
+        </article>
+        <article class="card">
+          <h3>Leadership</h3>
+          <p>Teams, community projects, mentoring, and collaboration.</p>
+        </article>
+        <article class="card">
+          <h3>Entrepreneurship</h3>
+          <p>Business ideas, creative ventures, and future plans.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2>My journey so far</h2>
+      <p>
+        Add your awards, leadership roles, internships,
+        projects, and accomplishments here.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Let's connect!</h2>
+      <p>Interested in my work or a project? Reach out.</p>
+      <a class="button"
+         href="mailto:Illyanievalera@gmail.com">
+        Email me
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with creativity and purpose.</p>
+  </footer>
+</body>
+</html>
